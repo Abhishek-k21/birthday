@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Jannavi DIDI! </title>
+    <meta name="description" content="A special birthday celebration page for Jannavi Sharma, inspired by the King of Pop.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="lofi.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Music Toggle -->
+    <button class="music-toggle" id="musicToggle" title="Play/Pause Music">
+        <span class="music-icon" id="musicIcon">🎵</span>
+        <span class="music-label" id="musicLabel">Play Music</span>
+    </button>
+
+
+    <!-- Sparkle canvas background -->
+    <canvas id="sparkleCanvas"></canvas>
+
+    <!-- Spotlight overlay -->
+    <div class="spotlight-overlay" id="spotlightOverlay"></div>
+
+    <!-- Floating music notes -->
+    <div class="floating-notes" id="floatingNotes"></div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-image">
+            <img src="mj-hero.jpg" alt="Michael Jackson" />
+        </div>
+        <div class="hero-content">
+            <div class="crown">👑</div>
+            <p class="hero-subtitle">Wishing  you</p>
+            <h1 class="hero-title">
+                <span class="line1">Happiest Birthday</span>
+                <span class="line2">Jannavi</span>
+                <span class="line3">Didi</span>
+            </h1>
+            <div class="hero-tagline">
+                <span class="tagline-star">★</span>
+                <span>May your birthday be as bright and wonderful as your spirit</span>
+                <span class="tagline-star">★</span>
+            </div>
+            </div>
+        </div>
+        <div class="scroll-hint" id="scrollHint">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+        <div class="hero-glitter"></div>
+    </section>
+
+    <!-- ===== MESSAGE SECTION ===== -->
+    <section class="message-section" id="message">
+        <div class="section-container">
+            <div class="mj-quote-badge">
+                <span class="quote-icon">🎤</span>
+                <span>"You Rock our World"</span>
+            </div>
+            <div class="message-card">
+                <div class="message-glow"></div>
+                <p class="message-text">
+                    To the most <em>Thriller</em> sister in the world — today is all about <strong>you</strong>. 
+                    Your smile lights up every room like a spotlight on stage. 
+                    You're the kind of person who makes the world a <em>better place</em>, 
+                    and we're all so lucky to have you in our lives.
+                </p>
+                <p class="message-text">
+                    May this year bring you all the magic, love, and joy you deserve. 
+                    Keep dancing through life like nobody's watching. 🌙✨
+                </p>
+                <p class="message-signature">— With all the love in the world 💛</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-badge">Memory Lane</span>
+                <h2 class="section-title">Introducing Dhanwanti ki maaa</h2>
+                <p class="section-desc">Brought to you by komal , Abhishek(very tall and a good guy) and Gagan.
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <!-- Photo 1 -->
+                <div class="gallery-card card-large" data-index="1">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo1.jpg" alt="Memory 1" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">01</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Precious Moments ✨</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 2 -->
+                <div class="gallery-card" data-index="2">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo2.jpg" alt="Memory 2" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">02</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Forever Young 🌟</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 3 -->
+                <div class="gallery-card" data-index="3">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo3.jpg" alt="Memory 3" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">03</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">All Smiles 😊</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 4 -->
+                <div class="gallery-card" data-index="4">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo4.jpg" alt="Memory 4" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">04</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Golden Times 💫</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 5 -->
+                <div class="gallery-card card-large" data-index="5">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo5.jpg" alt="Memory 5" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">05</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Best Day Ever 🎉</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 6 -->
+                <div class="gallery-card" data-index="6">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo6.jpg" alt="Memory 6" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">06</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Unforgettable 🌙</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 7 -->
+                <div class="gallery-card" data-index="7">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo7.jpg" alt="Memory 7" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">07</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Dancing Queen 💃</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 8 -->
+                <div class="gallery-card card-large" data-index="8">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo8.jpg" alt="Memory 8" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">08</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Pure Magic ✨</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 9 -->
+                <div class="gallery-card" data-index="9">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo9.jpg" alt="Memory 9" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">09</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">The Real Star ⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+                <!-- Photo 10 -->
+                <div class="gallery-card" data-index="10">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="photos/photo10.jpg" alt="Memory 10" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder').style.display='flex';">
+                            <div class="placeholder" style="display:none;">
+                                <span class="placeholder-num">10</span>
+                                <span class="placeholder-text">Add Photo</span>
+                            </div>
+                            <div class="card-overlay">
+                                <span class="card-caption">Forever & Always 💛</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-reflection"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Full size photo">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+
+
+
+    <!-- ===== FINALE / WISH SECTION ===== -->
+    <section class="finale-section" id="finale">
+        <div class="section-container">
+            <div class="finale-spotlight"></div>
+            <div class="finale-content">
+                <div class="glove-icon">🧤</div>
+                <h2 class="finale-title">One More Thing...</h2>
+                <p class="finale-text">
+                    Just like the King of Pop said — <em>"The greatest education in the world is watching the masters at work."</em>
+                    <br><br>
+                    And Jannavi, watching you grow, shine, and conquer everything you set your mind to — 
+                    <strong>that's</strong> the real show. 🌟
+                </p>
+                <div class="finale-wish">
+                    <span class="wish-sparkle">✦</span>
+                    Happy Birthday, Superstar!
+                    <span class="wish-sparkle">✦</span>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-quote">"If you enter this world knowing you are loved and you leave this world knowing the same, then everything that happens in between can be dealt with."</p>
+            <p class="footer-attr">— Michael Jackson</p>
+            <div class="footer-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
